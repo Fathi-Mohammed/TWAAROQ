@@ -27,7 +27,7 @@
 
     &:checked {
       + .radio-label-om {
-        border-color: $secondaryColor;
+        border-color: $primaryColor;
         background-image: url(../images/check.svg);
       }
     }

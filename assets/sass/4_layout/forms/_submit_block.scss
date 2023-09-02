@@ -3,7 +3,7 @@
   background: $primaryColor;
   border: none;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 18px;
   transition: 0.5s;
   margin-bottom: 0;
   display: flex;
@@ -11,9 +11,9 @@
   align-items: center;
   outline: none;
   padding: 0 30px;
-  height: 56px;
+  height: 53px;
   width: max-content;
-  border-radius: $mainBorderRidus;
+  border-radius: $mainBorderRadius;
   min-width: 180px;
 
   .icon__ {
@@ -36,54 +36,6 @@
     min-width: 236px;
   }
 
-  &.secondaryColorButton {
-    background-color: $secondaryColor;
-
-    &:hover {
-      background-color: rgba($secondaryColor, 0.9);
-    }
-  }
-
-  &.cancellation_button {
-    background-color: #fff;
-    color: $headingSecondaryColor;
-    border: 1px solid $borderColor;
-
-    &:hover {
-      background-color: rgba($headingSecondaryColor, 0.05);
-    }
-  }
-
-  &.like_button__ {
-    min-width: 100px;
-    height: 40px;
-    background-color: rgba($primaryColor, 0.1);
-    border: 1px solid $primaryColor;
-    color: $primaryColor;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 600;
-
-    @include sm {
-      min-width: 192.6px;
-    }
-
-    .icon__ {
-      margin: 0;
-      margin-inline-end: 5px;
-    }
-
-    &:hover {
-      background-color: $primaryColor;
-      color: #fff;
-
-      .icon__ {
-        filter: brightness(0) invert(1);
-      }
-    }
-
-  }
-
   &.full_width__ {
     width: 100%;
   }
@@ -99,56 +51,97 @@
     }
   }
 
-  &.modify_button__ {
-    border-radius: 5px;
-    border: 1px solid $secondaryColor;
-    color: $secondaryColor;
-    height: 32px;
-    min-width: 87px;
-
-    &:hover {
-      background-color: rgba($secondaryColor, 0.1);
-    }
-  }
-
-  &.delete_button__ {
-    border-radius: 5px;
-    border: 1px solid $redColor;
-    color: $redColor;
-    height: 32px;
-    min-width: 87px;
-
-    &:hover {
-      background-color: rgba($redColor, 0.1);
-    }
-  }
-
-  &.call_button {
-    font-size: 12px;
-    min-width: 95px;
-    height: 40px;
-    background-color: #e6f9fa;
-    border-radius: 5px;
-    border: 1px solid #22b1bf;
-    color: #22b1bf;
-
-    .phone_icon {
-      margin-inline-end: 11px;
-      fill: #22b1bf;
-      transition: 0.5s;
-    }
+  &.log_out_link__ {
+    background-color: $mainRedColor;
 
     &:hover {
       color: #fff;
-      background-color: #22b1bf;
+      background-color: rgba($mainRedColor, 0.7);
+    }
+  }
 
-      .phone_icon {
-        fill: #fff;
-      }
+  &.log_out_cancellation__ {
+    background-color: #fff;
+    border: 1px solid $mainRedColor;
+    color: $mainRedColor;
 
-      .phone_icon {
-        fill: #fff;
+    &:hover {
+      background-color: rgba($mainRedColor, 0.1);
+    }
+  }
+
+  &.modal_bordered_button__ {
+    background-color: #fff;
+    border: 1px solid $primaryColor;
+    color: $headingThirdColor;
+    margin-bottom: 0;
+
+    &:hover {
+      background-color: rgba($primaryColor, 0.2);
+    }
+
+  }
+
+  &.about_us_button__ {
+    height: 63px;
+    max-width: 170px;
+    padding: 15px 11px;
+    gap: 5px;
+    position: relative;
+
+    &::after {
+      content: url(../images/shapes/button_background.svg);
+      position: absolute;
+      top: 10px;
+      inset-inline-start: -10px;
+    }
+  }
+  
+  &.main_site_button__ {
+    background-color: transparent;
+    color: $paragraphprimaryColor;
+    border: 1px solid $paragraphprimaryColor;
+    height: 63px;
+    width: 170px;
+    padding: 0;
+    gap: 5px;
+    position: relative;
+
+    &::after {
+      content: url(../images/shapes/button_background.svg);
+      position: absolute;
+      top: 0;
+      inset-inline-start: 0;
+      opacity: 0;
+      transition: 0.5s;
+    }
+    
+    &:hover {
+      color: #fff;
+      background-color: $primaryColor;
+
+      .icon__ {
+        filter: brightness(0) invert(1);
       }
+      
+      &::after {
+        top: 10px;
+        inset-inline-start: -10px;	
+        opacity: 1;
+      }
+    }
+  }
+
+  &.message_send_button {
+    font-size: 16px;
+    height: 64px;
+    border-radius: 5px;
+    width: 119px;
+
+    @include xs {
+      padding: 0;
+      font-size: 12px;
+      min-width: 50px !important;
     }
   }
 }

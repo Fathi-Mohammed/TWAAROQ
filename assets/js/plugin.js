@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
   lazyLoad();
   const dealsSwiperTabs = swiperInit({
-    className: ".deals-slider-wrapper",
+    className: ".advisors-slider-wrapper",
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
         slidesPerView: 3,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     },
     observer: true,
@@ -36,6 +36,7 @@ jQuery(document).ready(function ($) {
   stickyHeader($);
   verificationCodeSeprate();
   selectPIckerInit($);
+  changeFileInputName()
 });
 
 // functions init
@@ -207,7 +208,6 @@ function stickyHeader($) {
   let lastScroll = 0;
   const fixedHeaderElement = $(".fixed_header__");
 
-
   $(document).on("scroll", function () {
     let currentScroll = $(this).scrollTop();
 
@@ -220,8 +220,8 @@ function stickyHeader($) {
 
     const fixedHeightToHeaderWrapper = function (fixedHeaderElement) {
       const fixedHeaderElementHeight = fixedHeaderElement.innerHeight();
-      $('.main_header__').css('height', fixedHeaderElementHeight);
-    }
+      $(".main_header__").css("height", fixedHeaderElementHeight);
+    };
 
     fixedHeightToHeaderWrapper(fixedHeaderElement);
 
@@ -238,4 +238,12 @@ function stickyHeader($) {
     }
     lastScroll = currentScroll;
   });
+}
+
+function changeFileInputName() {
+  $('.file_input__').change(function(e) {
+    let filePlaceholder = $('.file_input_placeholder');
+    filePlaceholder.text(e.target.files[0].name);
+    filePlaceholder.addClass('uploaded')
+  })
 }

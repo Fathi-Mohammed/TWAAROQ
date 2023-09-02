@@ -1,39 +1,50 @@
-.terms_and_conditions_page__ {
-  padding: 10px 0 50px;
-}
-
-.terms_and_conditions_block {
+.rules_block__ {
+  padding: 60px 34px;
+  border-radius: $mainBorderRadius;
+  box-shadow: 0 3px 6px $shadowColor;
   background-color: #fff;
-  padding: 25px 25px 33px;
 
-  .section_head,
   .parag_head {
-    font-size: 18px;
-    font-weight: 700;
-    color: $headingSecondaryColor;
-  }
+    font-size: 20px;
+    font-weight: 600;
+    color: $headingMainColor;
+    margin-bottom: 15px;
+    line-height: 1.6;
 
-  .section_head {
-    margin-bottom: 40px;
+    @include xs {
+      font-size: 14px;
+    }
   }
 
   .parag__ {
     font-size: 18px;
+    color: $headingThirdColor;
     font-weight: 500;
-    margin-bottom: 40px;
-    color: $paragraphMainColor;
-    line-height: 1.8;
+
+    @include xs {
+      font-size: 12px;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 57px;
+    }
   }
 
-  .download_btn__ {
-    border: 0;
-    outline: 0;
-    max-width: 220px;
-    height: 56px;
-    cursor: pointer;
+  &.terms_and_conditions_block {
+    padding-inline-start: 65px;
 
-    svg {
-      margin-inline-end: 14px;
+    .parag_head {
+      position: relative;
+
+      &::before {
+        content: url(../images/shapes/terms_title_head_icon.svg);
+        position: absolute;
+        inset-inline-start: -45px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 29px;
+        height: 29px;
+      }
     }
   }
 }

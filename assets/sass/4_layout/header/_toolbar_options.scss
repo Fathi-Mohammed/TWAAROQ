@@ -7,30 +7,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba($secondaryColor, 0.1);
+    background-color: rgba($primaryColor, 0.1);
     position: relative;
     width: 40px;
     height: 40px;
-    color: $secondaryColor;
+    color: $primaryColor;
     border-radius: 50%;
 
     svg {
       width: 15px;
     }
   }
-}
 
-.lang__ {
-  .lang_link__ {
-    .figure__ {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-inline-end: 10px;
+  @include xxs {
+    width: 30px;
+    height: 30px;
+
+    svg {
+      width: 10px;
     }
   }
 }
+
 
 .toolbar_options__ {
   display: flex;
@@ -42,6 +40,63 @@
 
   @include sm {
     margin-top: 0;
+    gap: 10px;
+  }
+
+  .header_notification_block__ {
+    margin-inline-start: 60px;
+    background-color: rgba($primaryColor, 0.14);
+    border-radius: 50%;
+    min-width: 45px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include md {
+      margin-inline-start: 10px;
+    }
+
+    @include xxs {
+      min-width: 30px;
+      min-height: 30px;
+    }
+
+    .icon__ {
+      width: 25px;
+      height: 30px;
+
+      @include xxs {
+        width: 16.666px;
+        height: 20px;
+      }
+    }
+
+    .header_notification_number__ {
+      position: absolute;
+      top: -10px;
+      inset-inline-start: -7px;
+      background-color: $mainRedColor;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 12px;
+      width: 23px;
+      height: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+
+      @include xxs {
+        width: 20px;
+        height: 20px;
+        inset-inline-start: -4px;
+        font-size: 9px;
+
+
+      }
+    }
   }
 
   .block__ {
@@ -59,12 +114,12 @@
       }
     }
 
-    &:not(:first-child) {
-      margin-inline-start: 20px;
+    // &:not(:first-child) {
+    //   margin-inline-start: 20px;
 
-      @include sm {
-        margin-inline-start: 4px;
-      }
-    }
+    //   @include sm {
+    //     margin-inline-start: 4px;
+    //   }
+    // }
   }
 }

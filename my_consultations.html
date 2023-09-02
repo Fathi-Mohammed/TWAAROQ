@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Twaaroq</title>
+
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- start header  -->
+    <header class="main_header__">
+      <div class="fixed_header__">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-2 col-md-6 col-sm-3 col-3">
+              <a class="header_logo__" href="index.html">
+                <figure class="figure__">
+                  <img src="assets/images/logo.png" alt=".." />
+                </figure>
+              </a>
+            </div>
+
+            <div class="col-lg-7 col-12 col_modify">
+              <nav class="nav-om" id="navbar-menu-om">
+                <button class="close-button__"></button>
+
+                <figure class="figure__ nav_logo__">
+                  <img src="assets/images/logo.png" alt=".." />
+                </figure>
+                <div class="sing-up-blocks nav_sign_block__">
+                  <a class="singup_link login_link" href="register_signin.html"
+                    >تسجيل الدخول</a
+                  >
+                  <a class="singup_link" href="register_signin.html">
+                    <figure
+                      class="figure__ icon__ loading-omd"
+                      style="background-color: #dbecff"
+                    >
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/header_user.svg"
+                        alt=".."
+                      />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+                <ul class="nav-list-om list-unstyled">
+                  <li>
+                    <a href="index.html">الرئيسية</a>
+                  </li>
+                  <li>
+                    <a class="" href="our_message_and_goals.html"> عن الشركة </a>
+                  </li>
+                  <li>
+                    <a href="our_services.html">خدماتنا </a>
+                  </li>
+                  <li>
+                    <a href="our_partners.html">شركائنا</a>
+                  </li>
+                  <li>
+                    <a href="contact_us.html">اتصل بنا</a>
+                  </li>
+                  <li class="active">
+                    <a href="consultation_request.html">طلب استشارة</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-9 col-9">
+              <ul class="toolbar_options__ list-unstyled">
+                <!-- <li class="block__">
+                  <div class="account_options__ dropdown__">
+                    <a class="account_options_link__ butt__" href="#!">
+                      مرحبا بك
+                    </a>
+                    <ul class="sub-menu__">
+                      <li>
+                        <a class="sub_menu_item__" href="profile.html">
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/profile.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          تعديل
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sub_menu_item__" href="my_consultations.html">
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/consulting.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          استشاراتي
+                        </a>
+                      </li>
+                      <li>
+                        <button
+                        type="button"
+                        class="sub_menu_item__"
+                        data-toggle="modal"
+                        data-target="#log_out_modal"    
+                        >
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/exit.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          تسجيل الخروج
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="block__ header_notification_block__">
+                  <figure class="figure__ icon__ loading-omd">
+                    <img
+                      class="lazy-omd img-om"
+                      data-src="assets/images/shapes/notifications.svg"
+                      alt=".."
+                    />
+                  </figure>
+                  <p class="header_notification_number__">999</p>
+                </li> -->
+
+                <li class="block__ larg_size_only__">
+                  <div class="sing-up-blocks">
+                    <button
+                      type="button"
+                      class="singup_link login_link"
+                      data-toggle="modal"
+                      data-target="#log_in_modal"
+                    >
+                      تسجيل الدخول
+                    </button>
+
+                    <button
+                      type="button"
+                      class="singup_link"
+                      data-toggle="modal"
+                      data-target="#sign_up_modal"
+                    >
+                      حساب جديد
+                    </button>
+                  </div>
+                </li>
+
+                <li class="block__ small_size_only__">
+                  <button
+                    class="menu_button__ button__"
+                    id="menu-butt-activ-om"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="bars"
+                      class="svg-inline--fa fa-bars fa-w-14"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- Start Page Head -->
+    <section class="page_head_section">
+      <h1 class="page_main_head_title">إستشاراتى</h1>
+      <div class="overlay__"></div>
+    </section>
+    <!-- End Page Head -->
+
+    <!-- Start Consultation -->
+    <main
+      class="form_section consultation_section section_defaults without_border"
+    >
+      <div class="container">
+        <!-- tabs pageination -->
+
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a
+            class="nav-item nav-link active"
+            id="current-consultations-tab"
+            data-toggle="tab"
+            href="#current_consultations"
+            role="tab"
+            aria-controls="current-consultations"
+            aria-selected="true"
+            >إستشارات حاليه</a
+          >
+          <a
+            class="nav-item nav-link"
+            id="previous-consultations-tab"
+            data-toggle="tab"
+            href="#previous_consultations"
+            role="tab"
+            aria-controls="previous_consultations"
+            aria-selected="false"
+            >إستشارات سابقه</a
+          >
+        </div>
+
+        <!-- start tabs content -->
+        <div class="tab-content" id="nav-tabContent">
+          <!-- first tab -->
+          <div
+            class="tab-pane fade show active"
+            id="current_consultations"
+            role="tabpanel"
+            aria-labelledby="current-consultations-tab"
+          >
+            <div class="consultation_box">
+              <div class="content_wrapper">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/user_.svg"
+                    alt=".."
+                  />
+                </figure>
+
+                <div class="consultation_description">
+                  <div class="head__">
+                    <div class="name__">
+                      Mohamed Samir
+
+                      <span class="rate">
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star"></i>
+                        <span class="rating_by_number">(4.2)</span>
+                      </span>
+                    </div>
+
+                    <div class="date__">
+                      تاريخ الإستشارة :
+
+                      <span class="date_info__">
+                        3 نوفمبر 2020
+
+                        <span class="date_houer">12:15م</span>
+                      </span>
+                    </div>
+                  </div>
+                  <p class="parag__">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
+                    عوضاً عن استخدام “هنا يوجد محتوى نصي، هنا يوجد محتوى نصي”
+                    فتجعلها تبدو (أي الأحرف) وكأنها نص هناك حقيقة مثبتة منذ زمن
+                    طويل
+                  </p>
+                </div>
+              </div>
+
+              <a href="#" class="link__om consultation_box_link">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/Vector2.svg"
+                    alt=".."
+                  />
+                </figure>
+              </a>
+            </div>
+
+            <div class="consultation_box">
+              <div class="content_wrapper">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/user_.svg"
+                    alt=".."
+                  />
+                </figure>
+
+                <div class="consultation_description">
+                  <div class="head__">
+                    <div class="name__">
+                      Mohamed Samir
+
+                      <span class="rate">
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star"></i>
+                        <span class="rating_by_number">(4.2)</span>
+                      </span>
+                    </div>
+
+                    <div class="date__">
+                      تاريخ الإستشارة :
+
+                      <span class="date_info__">
+                        3 نوفمبر 2020
+
+                        <span class="date_houer">12:15م</span>
+                      </span>
+                    </div>
+                  </div>
+                  <p class="parag__">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
+                    عوضاً عن استخدام “هنا يوجد محتوى نصي، هنا يوجد محتوى نصي”
+                    فتجعلها تبدو (أي الأحرف) وكأنها نص هناك حقيقة مثبتة منذ زمن
+                    طويل
+                  </p>
+                </div>
+              </div>
+
+              <a href="#" class="link__om consultation_box_link">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/Vector2.svg"
+                    alt=".."
+                  />
+                </figure>
+              </a>
+            </div>
+
+            <div class="consultation_box">
+              <div class="content_wrapper">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/user_.svg"
+                    alt=".."
+                  />
+                </figure>
+
+                <div class="consultation_description">
+                  <div class="head__">
+                    <div class="name__">
+                      Mohamed Samir
+
+                      <span class="rate">
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star"></i>
+                        <span class="rating_by_number">(4.2)</span>
+                      </span>
+                    </div>
+
+                    <div class="date__">
+                      تاريخ الإستشارة :
+
+                      <span class="date_info__">
+                        3 نوفمبر 2020
+
+                        <span class="date_houer">12:15م</span>
+                      </span>
+                    </div>
+                  </div>
+                  <p class="parag__">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
+                    عوضاً عن استخدام “هنا يوجد محتوى نصي، هنا يوجد محتوى نصي”
+                    فتجعلها تبدو (أي الأحرف) وكأنها نص هناك حقيقة مثبتة منذ زمن
+                    طويل
+                  </p>
+                </div>
+              </div>
+
+              <a href="#" class="link__om consultation_box_link">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/Vector2.svg"
+                    alt=".."
+                  />
+                </figure>
+              </a>
+            </div>
+          </div>
+          <!-- second tab  -->
+          <div
+            class="tab-pane fade swiper_test"
+            id="previous_consultations"
+            role="tabpanel"
+            aria-labelledby="previous-consultations-tab"
+          >
+
+            <div class="consultation_box">
+              <div class="content_wrapper">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/user_.svg"
+                    alt=".."
+                  />
+                </figure>
+
+                <div class="consultation_description">
+                  <div class="head__">
+                    <div class="name__">
+                      Mohamed Samir
+
+                      <span class="rate">
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star"></i>
+                        <span class="rating_by_number">(4.2)</span>
+                      </span>
+                    </div>
+
+                    <div class="date__">
+                      تاريخ الإستشارة :
+
+                      <span class="date_info__">
+                        3 نوفمبر 2020
+
+                        <span class="date_houer">12:15م</span>
+                      </span>
+                    </div>
+                  </div>
+                  <p class="parag__">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
+                    عوضاً عن استخدام “هنا يوجد محتوى نصي، هنا يوجد محتوى نصي”
+                    فتجعلها تبدو (أي الأحرف) وكأنها نص هناك حقيقة مثبتة منذ زمن
+                    طويل
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="consultation_box">
+              <div class="content_wrapper">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/user_.svg"
+                    alt=".."
+                  />
+                </figure>
+
+                <div class="consultation_description">
+                  <div class="head__">
+                    <div class="name__">
+                      Mohamed Samir
+
+                      <span class="rate">
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star"></i>
+                        <span class="rating_by_number">(4.2)</span>
+                      </span>
+                    </div>
+
+                    <div class="date__">
+                      تاريخ الإستشارة :
+
+                      <span class="date_info__">
+                        3 نوفمبر 2020
+
+                        <span class="date_houer">12:15م</span>
+                      </span>
+                    </div>
+                  </div>
+                  <p class="parag__">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
+                    عوضاً عن استخدام “هنا يوجد محتوى نصي، هنا يوجد محتوى نصي”
+                    فتجعلها تبدو (أي الأحرف) وكأنها نص هناك حقيقة مثبتة منذ زمن
+                    طويل
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="consultation_box">
+              <div class="content_wrapper">
+                <figure class="figure__ icon__ loading-omd p-0">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/shapes/user_.svg"
+                    alt=".."
+                  />
+                </figure>
+
+                <div class="consultation_description">
+                  <div class="head__">
+                    <div class="name__">
+                      Mohamed Samir
+
+                      <span class="rate">
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star active"></i>
+                        <i class="rating_star_icon__ fa fa-star"></i>
+                        <span class="rating_by_number">(4.2)</span>
+                      </span>
+                    </div>
+
+                    <div class="date__">
+                      تاريخ الإستشارة :
+
+                      <span class="date_info__">
+                        3 نوفمبر 2020
+
+                        <span class="date_houer">12:15م</span>
+                      </span>
+                    </div>
+                  </div>
+                  <p class="parag__">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة
+                    ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل
+                    توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة
+                    لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف
+                    عوضاً عن استخدام “هنا يوجد محتوى نصي، هنا يوجد محتوى نصي”
+                    فتجعلها تبدو (أي الأحرف) وكأنها نص هناك حقيقة مثبتة منذ زمن
+                    طويل
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- end tabs content -->
+      </div>
+    </main>
+    <!-- End Consultation -->
+
+    <footer class="footer_sec__">
+      <div class="container">
+        <div class="footer_content__">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">روابط هامة</h2>
+              <ul class="footer_list__ list-unstyled">
+                <li><a href="sectors.html">الرئيسيه</a></li>
+                <li><a href="our_message_and_goals.html">عن الشركه</a></li>
+                <li><a href="our_partners.html">شركائنا</a></li>
+                <li><a href="our_services.html">خدماتنا </a></li>
+                <li><a href="contact_us.html">إتصل بنا </a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">الخدمات</h2>
+              <ul class="footer_list__ list-unstyled">
+                <li><a href="#">إستشارات ماليه</a></li>
+                <li><a href="#">إستشارات أسريه</a></li>
+                <li><a href="#">إستشارات بنكيه</a></li>
+                <li><a href="#">إستشارات تعليميه</a></li>
+                <li><a href="#">إستشارات إسلاميه</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">تواصل معنا</h2>
+              <ul class="footer_socials__ list-unstyled">
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/twitter.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/instagram.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/facebook.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">إتصل بنا</h2>
+              <ul class="footer_list__ list-unstyled contact_info">
+                <li class="li__">
+                  <a href="tel:01054784175" class="link__">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/socials/calling.png"
+                        alt=".."
+                      />
+                    </figure>
+
+                    01054784175
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="mailto:Mohamed_ali987@hotmail.com" class="link__">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/socials/email.png"
+                        alt=".."
+                      />
+                    </figure>
+
+                    Mohamed_ali987@hotmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="copyrights_content___">
+      <div class="container">
+        <p class="copyrights__">جميع الحقوق محفوظه لشركه المصادر الرقميه 2023</p>
+      </div>
+    </section>
+
+    <!-- Start Modals -->
+
+    <!-- log in Modal -->
+    <div
+      class="modal fade log_in_modal"
+      id="log_in_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ icon__ loading-omd" aria-hidden="true">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/modal/close.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+
+            <h2 class="title">تسجيل الدخول</h2>
+            <p class="sub_title__">من فضلك قم بإدخال بياناتك لتسجيل الدخول</p>
+
+            <form action="">
+              <div class="input_group__">
+                <label class="label__">البريد الإلكتروني</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="قم بإدخال البريد الإلكتروني"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">كلمة المرور</label>
+                <div class="password-group-om icon_input_group password__">
+                  <input
+                    class="input__"
+                    type="password"
+                    name="password"
+                    placeholder="كلمة المرور"
+                  />
+
+                  <button class="show-password-button-om">
+                    <figure class="figure__">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.339"
+                        height="18.286"
+                        viewBox="0 0 21.339 18.286"
+                      >
+                        <path
+                          class="icon__"
+                          id="Icon_ionic-md-eye-off"
+                          data-name="Icon ionic-md-eye-off"
+                          d="M12.922,8.348a4.837,4.837,0,0,1,4.853,4.814,4.631,4.631,0,0,1-.348,1.762l2.833,2.81a11.384,11.384,0,0,0,3.329-4.572A11.492,11.492,0,0,0,9.05,6.614l2.1,2.081A4.8,4.8,0,0,1,12.922,8.348Zm-9.7-2.624,2.214,2.2.448.443a11.33,11.33,0,0,0-3.633,4.8,11.509,11.509,0,0,0,14.919,6.41l.41.4,2.843,2.81,1.233-1.224L4.45,4.5Zm5.362,5.319,1.5,1.491a2.728,2.728,0,0,0-.076.624,2.9,2.9,0,0,0,2.91,2.886,2.737,2.737,0,0,0,.629-.076l1.5,1.491a4.827,4.827,0,0,1-6.986-4.3A4.757,4.757,0,0,1,8.583,11.043Zm4.181-.748,3.057,3.033.019-.152a2.9,2.9,0,0,0-2.91-2.886Z"
+                          transform="translate(-2.25 -4.5)"
+                          fill="#aaa"
+                        />
+                      </svg>
+                    </figure>
+                  </button>
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <div class="form_label_for_info__">
+                  <button
+                    class="button__ forget_password_model_button__"
+                    data-toggle="modal"
+                    data-target="#forget_password_modal"
+                    data-dismiss="modal"
+                  >
+                    هل نسيت كلمه المرور ؟
+                  </button>
+                </div>
+              </div>
+              <div class="input_group__">
+                <input
+                  class="submit-button__ full_width__ input__"
+                  type="submit"
+                  value="تسجيل الدخول"
+                />
+              </div>
+              <div class="input_group__">
+                <button
+                  class="submit-button__ full_width__ modal_bordered_button__"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#sign_up_modal"
+                  data-dismiss="modal"
+                >
+                  إنشاء حساب
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign up Modal -->
+    <div
+      class="modal fade sign_up_modal"
+      id="sign_up_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ icon__ loading-omd" aria-hidden="true">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/modal/close.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+
+            <h2 class="title">إنشاء حساب جديد</h2>
+            <p class="sub_title__">
+              من فضلك قم بإدخال بياناتك لإنشاء حساب جديد
+            </p>
+
+            <form action="">
+              <div class="input_group__">
+                <label class="label__">الإسم</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="قم بإدخال الإسم"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">البريد الإلكتروني</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="قم بإدخال البريد الإلكتروني"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">رقم الجوال</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="قم بإدخال رقم الجوال"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">كلمة المرور</label>
+                <div class="password-group-om icon_input_group password__">
+                  <input
+                    class="input__"
+                    type="password"
+                    name="password"
+                    placeholder="قم بإدخال كلمة المرور"
+                  />
+
+                  <button class="show-password-button-om">
+                    <figure class="figure__">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.339"
+                        height="18.286"
+                        viewBox="0 0 21.339 18.286"
+                      >
+                        <path
+                          class="icon__"
+                          id="Icon_ionic-md-eye-off"
+                          data-name="Icon ionic-md-eye-off"
+                          d="M12.922,8.348a4.837,4.837,0,0,1,4.853,4.814,4.631,4.631,0,0,1-.348,1.762l2.833,2.81a11.384,11.384,0,0,0,3.329-4.572A11.492,11.492,0,0,0,9.05,6.614l2.1,2.081A4.8,4.8,0,0,1,12.922,8.348Zm-9.7-2.624,2.214,2.2.448.443a11.33,11.33,0,0,0-3.633,4.8,11.509,11.509,0,0,0,14.919,6.41l.41.4,2.843,2.81,1.233-1.224L4.45,4.5Zm5.362,5.319,1.5,1.491a2.728,2.728,0,0,0-.076.624,2.9,2.9,0,0,0,2.91,2.886,2.737,2.737,0,0,0,.629-.076l1.5,1.491a4.827,4.827,0,0,1-6.986-4.3A4.757,4.757,0,0,1,8.583,11.043Zm4.181-.748,3.057,3.033.019-.152a2.9,2.9,0,0,0-2.91-2.886Z"
+                          transform="translate(-2.25 -4.5)"
+                          fill="#aaa"
+                        />
+                      </svg>
+                    </figure>
+                  </button>
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">تأكيد كلمة المرور</label>
+                <div class="password-group-om icon_input_group password__">
+                  <input
+                    class="input__"
+                    type="password"
+                    name="password"
+                    placeholder="قم بتأكيد كلمة المرور"
+                  />
+
+                  <button class="show-password-button-om">
+                    <figure class="figure__">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.339"
+                        height="18.286"
+                        viewBox="0 0 21.339 18.286"
+                      >
+                        <path
+                          class="icon__"
+                          id="Icon_ionic-md-eye-off"
+                          data-name="Icon ionic-md-eye-off"
+                          d="M12.922,8.348a4.837,4.837,0,0,1,4.853,4.814,4.631,4.631,0,0,1-.348,1.762l2.833,2.81a11.384,11.384,0,0,0,3.329-4.572A11.492,11.492,0,0,0,9.05,6.614l2.1,2.081A4.8,4.8,0,0,1,12.922,8.348Zm-9.7-2.624,2.214,2.2.448.443a11.33,11.33,0,0,0-3.633,4.8,11.509,11.509,0,0,0,14.919,6.41l.41.4,2.843,2.81,1.233-1.224L4.45,4.5Zm5.362,5.319,1.5,1.491a2.728,2.728,0,0,0-.076.624,2.9,2.9,0,0,0,2.91,2.886,2.737,2.737,0,0,0,.629-.076l1.5,1.491a4.827,4.827,0,0,1-6.986-4.3A4.757,4.757,0,0,1,8.583,11.043Zm4.181-.748,3.057,3.033.019-.152a2.9,2.9,0,0,0-2.91-2.886Z"
+                          transform="translate(-2.25 -4.5)"
+                          fill="#aaa"
+                        />
+                      </svg>
+                    </figure>
+                  </button>
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <div class="checkbox-group-om">
+                  <input class="checkbox-om" type="checkbox" id="remember_me" />
+                  <label class="checkbox-label-om" for="remember_me"></label>
+                  <label
+                    class="label__ form_label_for_info__"
+                    for="remember_me"
+                  >
+                    الموافقة علي
+                    <a class="link__" href="terms_and_conditions.html"
+                      >الشروط والأحكام</a
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <input
+                  class="submit-button__ full_width__ input__"
+                  type="submit"
+                  value="إنشاء حساب جديد"
+                />
+              </div>
+              <div class="input_group__">
+                <button
+                  class="submit-button__ full_width__ modal_bordered_button__"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#log_in_modal"
+                  data-dismiss="modal"
+                >
+                  تسجيل الدخول
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- forget password Modal -->
+    <div
+      class="modal fade forget_password_modal"
+      id="forget_password_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ icon__ loading-omd" aria-hidden="true">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/modal/close.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+
+            <h2 class="title">إعاده كلمه المرور</h2>
+            <p class="sub_title__">من فضلك قم بإدخال رقم الجوال الخاص بك</p>
+
+            <form action="">
+              <div class="input_group__">
+                <label class="label__">رقم الجوال</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="قم بإدخال رقم الجوال"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <button
+                  class="submit-button__ full_width__ input__"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#new_password_modal"
+                  data-dismiss="modal"
+                >
+                  تأكيد
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- new password Modal -->
+    <div
+      class="modal fade new_password_modal"
+      id="new_password_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ icon__ loading-omd" aria-hidden="true">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/modal/close.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+
+            <h2 class="title">تعيين كلمه مرور جديده</h2>
+            <p class="sub_title__">من فضلك قم بإدخال كلمه المرور الجديده</p>
+
+            <form action="">
+              <div class="input_group__">
+                <label class="label__">كلمة المرور الجديدة</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="قم بإدخال كلمة المرور الجديدة"
+                  />
+                </div>
+              </div>
+              <div class="input_group__">
+                <label class="label__">تأكيد كلمة المرور</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="قم بتأكيد كلمة المرور الجديدة"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <button
+                  class="submit-button__ full_width__ input__"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#new_password_modal"
+                  data-dismiss="modal"
+                >
+                  تأكيد
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- log out Modal -->
+    <div
+      class="modal fade log_out_modal"
+      id="log_out_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <figure class="figure__ img__ loading-omd asp-om">
+              <img
+                class="lazy-omd img-om"
+                data-src="assets/images/modal/logout-modal-icon.svg"
+                alt=".."
+              />
+            </figure>
+            <h2 class="title">تسجيل الخروج</h2>
+            <p class="parag__">هل أنت متأكد من أنك تريد تسحيل الخروج</p>
+
+            <div class="links_group">
+              <a class="submit-button__ full_width__ log_out_link__" href="#"
+                >خروج</a
+              >
+              <a
+                class="submit-button__ full_width__ log_out_cancellation__"
+                href="#"
+                >إلغاء</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Modals -->
+
+    <!-- start js include  -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
+  </body>
+</html>

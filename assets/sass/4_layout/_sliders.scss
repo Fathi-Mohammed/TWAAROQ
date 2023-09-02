@@ -1,48 +1,41 @@
 // swiper slider
 .swiper-button-next,
 .swiper-button-prev {
-  width: 40px;
-  height: 40px;
+  width: 33px;
+  height: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  border: 1px solid $secondaryColor;
   transition: 0.5s;
   overflow: hidden;
-  background-color: transparent;
+  background-color: rgba(#fff, 0.40);
+  border: none;
+  border-radius: 5px;
+
 
   &.swiper-button-disabled {
-    // opacity: 1;
+    opacity: 1;
   }
 
   &::after {
-    content: url("../images/shapes/arrow-left.svg");
+    content: url("../images/shapes/Vector.svg");
     display: block;
     position: static;
     height: 64px;
-    transform: unset;
-
+    transform: rotateY(-180deg);
+    filter: brightness(0) invert(1);
+    
     @include dir {
-      transform: rotateY(-180deg);
-    }
-  }
-
-  &:hover {
-    background-color: $secondaryColor;
-
-    &::after {
-      filter: brightness(0) invert(1);
+      transform: unset;
     }
   }
 
   &.single_page_button {
     position: static;
-    border: 1px solid $borderColor;
 
     &::after {
-      content: url("../images/shapes/arrow-right.svg");
-      filter: brightness(0.8) grayscale(1);
+      content: url("../images/shapes/Vector.svg");
+      filter: brightness(0) invert(1);
     }
 
     &:hover {
@@ -58,10 +51,10 @@
 
 .swiper-button-next {
   &::after {
-    transform: rotateY(-180deg);
-
+    transform: rotateY(0);
+    
     @include dir {
-      transform: rotateY(0);
+      transform: rotateY(-180deg);
     }
   }
 }
@@ -78,17 +71,14 @@
 .swiper-pagination-clickable .swiper-pagination-bullet {
   margin: 0 2px;
   border-radius: 50%;
-  background-color: rgba(#86959F, 0.41);
+  background-color: rgba(#fff, 0.35);
   opacity: 1;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 
 
   &.swiper-pagination-bullet-active {
-    // background-color   : $primaryColor;
-    border-radius: 5px;
-    background-color: $secondaryColor;
-    width: 26px;
+    background-color: $primaryColor;
   }
 }
 

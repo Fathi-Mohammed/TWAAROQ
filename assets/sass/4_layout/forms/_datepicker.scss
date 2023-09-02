@@ -56,7 +56,7 @@
       align-items: center;
       align-items: center;
       font-size: 15px;
-      color: $headingSecondaryColor;
+      color: $headingprimaryColor;
       justify-content: center;
       width: 40px;
       height: 40px;
@@ -69,7 +69,7 @@
       }
 
       &.ui-state-active {
-        background-color: $secondaryColor;
+        background-color: $primaryColor;
         color: #fff;
       }
     }

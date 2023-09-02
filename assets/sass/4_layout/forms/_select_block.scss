@@ -4,18 +4,19 @@
 
   // button
   .dropdown-toggle {
-    border-radius: $mainBorderRidus;
+    border-radius: $mainBorderRadius;
     border: solid 1px $borderColor;
     background-color: #fff;
-    height: 52px;
+    height: 63px;
     padding: 13px 30px;
-    font-size: 14px;
+    font-size: 18px;
     font-stretch: normal;
     color: $paragraphMainColor;
     outline: none !important;
 
     &::after {
-      content: url(../images/shapes/arrow-down.svg);
+      content: url(../images/shapes/arrow-down2.svg);
+      transform: rotate(-90deg);
       margin: 0;
       margin-right: 0;
       display: inline-block;
@@ -23,7 +24,8 @@
       border: none !important;
       margin-top: 0;
       margin-inline-end: 0;
-      height: 14px;
+      width: 12px;
+      height: 22px;
     }
 
     .filter-option {

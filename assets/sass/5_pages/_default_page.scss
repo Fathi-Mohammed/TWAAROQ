@@ -1,10 +1,10 @@
 .default_page__ {
-  min-height: 50vh;
-  background-image: url(../images/default_page_background.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;
+  padding: 100px 0;
+  position: relative;
+  z-index: 3;
 }
+
+
 
 .sectors_page__,
 .sectors_divisions_page__,
@@ -15,12 +15,8 @@
   padding: 50px 0;
 }
 
-.common_questions_page__ {
-  padding-top: 26px;
-}
-
 .section__ {
-  border-radius: $secondaryBorderRidus;
+  border-radius: $secondaryBorderRadius;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(#000, 0.04);
   margin-bottom: 30px;
@@ -36,5 +32,51 @@
     font-size: 18px;
     font-weight: 700;
     margin: 0;
+  }
+}
+
+
+.section_defaults {
+  position: relative;
+  padding: 100px 0;
+  z-index: 3;
+}
+
+.home_page_section_background {
+  &.about_us_section__ {
+    position: relative;
+
+    &::after,
+    &::before {
+        content: url(../images/shapes/background1.svg);
+        position: absolute;
+        width: 74px;
+        height: 230px;
+        top: 165px;
+        inset-inline-start: 0;
+        z-index: 1;
+    }
+    
+    &::before {
+        top: unset;
+        bottom: 43px;
+        inset-inline-start: unset;
+        inset-inline-end: 0;
+    }
+  }
+
+  &.our_service_section {
+    background-color: $mainBackgroundColor;
+  }
+
+  &.form_section {
+    background-image: url(../images/shapes/background4.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  &.customers_opinions_section {
+    background-color: rgba($primaryColor, 0.13);
   }
 }

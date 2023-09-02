@@ -3,14 +3,21 @@
   resize: none;
   width: 100%;
   border: 1px solid $borderBreakColor;
-  border-radius: $mainBorderRidus;
-  padding: 20px 15px;
+  border-radius: $mainBorderRadius;
+  padding: 20px 29px;
 
   &.max_height_textarea_ {
     height: 159px;
   }
 
-  &:focus {
+  &:focus,
+  &:hover {
     outline: 0;
+    border-color: $primaryColor;
+  }
+
+  &::placeholder {
+    color: #aaa;
+    font-size: 18px;
   }
 }

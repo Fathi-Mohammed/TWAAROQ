@@ -1,5 +1,5 @@
 .input__ {
-  height: 56px;
+  height: 63px;
   border: solid 1px $borderColor;
   background-color: #fff;
   outline: none;
@@ -11,14 +11,15 @@
   display: flex;
   align-items: center;
   margin-bottom: 0;
-  border-radius: $mainBorderRidus;
+  border-radius: $mainBorderRadius;
 
   &:focus,
   &:hover {
-    border-color: $secondaryColor;
+    border-color: $primaryColor;
   }
 
   &::placeholder {
     color: #aaaaaa;
+    font-size: 18px;
   }
 }

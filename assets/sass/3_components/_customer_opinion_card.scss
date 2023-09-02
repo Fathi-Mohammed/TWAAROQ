@@ -1,0 +1,106 @@
+.customer_opinion_card__ {
+  box-shadow: 0 3px 6px $shadowColor;
+  border-radius: $mainBorderRadius;
+  padding: 53px 0 31px;
+  padding-inline-start: 35px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+
+  .img_block__ {
+    position: absolute;
+    top: -39px;
+    inset-inline-start: 74px;
+    // transform: translate(-74px,-39px);
+    // margin-top: -39px;
+    // margin-inline-start: 74px;
+    transition: 0.5s;
+
+    .figure__ {
+      width: 78px;
+      height: 78px;
+      padding: 0;
+      border-radius: 50%;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    &::after {
+      content: url(../images/shapes/customer-photo-border.svg);
+      position: absolute;
+      top: 1px;
+      inset-inline-start: -4px;
+      z-index: 1;
+    }
+  }
+
+  .head_wrapper__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+
+    .name__ {
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      color: $headingMainColor;
+      gap: 15px;
+      max-width: 300px;
+      overflow: hidden;
+
+      @include xxs {
+        font-size: 14px;
+      }
+
+      &::before {
+        content: url(../images/shapes/customer-message.svg);
+      }
+    }
+
+    .date__ {
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+      background-color: $primaryColor;
+      padding: 0 15px;
+      height: 28px;
+      min-width: 80px;
+      border-radius: 0 15px 15px 0;
+      
+      @include dir {
+        border-radius: 15px 0 0 15px;
+      }
+    }
+  }
+
+  .parag__ {
+    max-width: 452px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $headingMainColor;
+    text-align: start;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 6px $primaryColor;
+    border-color: $primaryColor;
+
+  }
+}
+
+.rating_wrapper__ {
+  align-self: flex-start;
+}
+
+.rating_star_icon__ {
+  color: $greyColor;
+  font-size: 20px;
+
+  &.active {
+    color: $yellowColor;
+  }
+}

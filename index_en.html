@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Twaaroq</title>
+
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- start header  -->
+    <header class="main_header__">
+      <div class="fixed_header__">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-2 col-md-6 col-sm-3 col-3">
+              <a class="header_logo__" href="index.html">
+                <figure class="figure__">
+                  <img src="assets/images/logo.png" alt=".." />
+                </figure>
+              </a>
+            </div>
+
+            <div class="col-lg-7 col-12 col_modify">
+              <nav class="nav-om" id="navbar-menu-om">
+                <button class="close-button__"></button>
+
+                <figure class="figure__ nav_logo__">
+                  <img src="assets/images/logo.png" alt=".." />
+                </figure>
+                <div class="sing-up-blocks nav_sign_block__">
+                  <a class="singup_link login_link" href="register_signin.html"
+                    >Sign In</a
+                  >
+                  <a class="singup_link" href="register_signin.html">
+                    <figure
+                      class="figure__ icon__ loading-omd"
+                      style="background-color: #dbecff"
+                    >
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/header_user.svg"
+                        alt=".."
+                      />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+                <ul class="nav-list-om list-unstyled">
+                  <li class="active">
+                    <a href="index.html">Main</a>
+                  </li>
+                  <li>
+                    <a class="" href="our_message_and_goals.html">
+                      About Company
+                    </a>
+                  </li>
+                  <li>
+                    <a href="our_services.html">Our Services </a>
+                  </li>
+                  <li>
+                    <a href="our_partners.html">Our Partner</a>
+                  </li>
+                  <li>
+                    <a href="contact_us.html">Call Us</a>
+                  </li>
+                  <li>
+                    <a href="consultation_request.html">Request to Consult</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-9 col-9">
+              <ul class="toolbar_options__ list-unstyled">
+                <!-- <li class="block__">
+                  <div class="account_options__ dropdown__">
+                    <a class="account_options_link__ butt__" href="#!">
+                      Welcome
+                    </a>
+                    <ul class="sub-menu__">
+                      <li>
+                        <a class="sub_menu_item__" href="profile.html">
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/profile.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          Amendment
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sub_menu_item__" href="my_consultations.html">
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/consulting.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          My Consultation
+                        </a>
+                      </li>
+                      <li>
+                        <button
+                        type="button"
+                        class="sub_menu_item__"
+                        data-toggle="modal"
+                        data-target="#log_out_modal"    
+                        >
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/exit.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          Sign Out
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="block__ header_notification_block__">
+                  <figure class="figure__ icon__ loading-omd">
+                    <img
+                      class="lazy-omd img-om"
+                      data-src="assets/images/shapes/notifications.svg"
+                      alt=".."
+                    />
+                  </figure>
+                  <p class="header_notification_number__">999</p>
+                </li> -->
+
+                <li class="block__ larg_size_only__">
+                  <div class="sing-up-blocks">
+                    <button
+                      type="button"
+                      class="singup_link login_link"
+                      data-toggle="modal"
+                      data-target="#log_in_modal"
+                    >
+                      Sign In
+                    </button>
+
+                    <button
+                      type="button"
+                      class="singup_link"
+                      data-toggle="modal"
+                      data-target="#sign_up_modal"
+                    >
+                      Sing Up
+                    </button>
+                  </div>
+                </li>
+
+                <li class="block__ small_size_only__">
+                  <button
+                    class="menu_button__ button__"
+                    id="menu-butt-activ-om"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="bars"
+                      class="svg-inline--fa fa-bars fa-w-14"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- Start Slide Section -->
+
+    <section class="slider_section__">
+      <div class="single-page-slider-wrapper">
+        <div class="swiper-container swiper home_slider">
+          <div class="swiper-wrapper">
+            <!-- Start Slide Content -->
+            <div class="swiper-slide">
+              <figure class="figure__ loading-omd asp-om">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/home_slider/01.jpg"
+                  alt="deals section block"
+                />
+              </figure>
+              <div class="slide_content">
+                <h2 class="title__">
+                  Twaaroq
+                  <span class="color_change">For Finance</span>
+                  Consulting
+                </h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque recusandae natus cum optio porro veniam similique
+                  voluptatum ea minima corporis!
+                </p>
+              </div>
+            </div>
+            <!-- End Slide Content -->
+
+            <!-- Start Slide Content -->
+            <div class="swiper-slide">
+              <figure class="figure__ loading-omd asp-om">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/home_slider/02.jpg"
+                  alt="deals section block"
+                />
+              </figure>
+              <div class="slide_content">
+                <h2 class="title__">
+                  Twaaroq
+                  <span class="color_change">For Finance</span>
+                  Consulting
+                </h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque recusandae natus cum optio porro veniam similique
+                  voluptatum ea minima corporis! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Doloremque recusandae natus cum
+                  optio porro veniam similique voluptatum ea minima corporis!
+                </p>
+              </div>
+            </div>
+            <!-- End Slide Content -->
+
+            <!-- Start Slide Content -->
+            <div class="swiper-slide">
+              <figure class="figure__ loading-omd asp-om">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/home_slider/01.jpg"
+                  alt="deals section block"
+                />
+              </figure>
+              <div class="slide_content">
+                <h2 class="title__">
+                  Twaaroq
+                  <span class="color_change">For Finance</span>
+                  Consulting
+                </h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque recusandae natus cum optio porro veniam similique
+                  voluptatum ea minima corporis!
+                </p>
+              </div>
+            </div>
+            <!-- End Slide Content -->
+
+            <!-- Start Slide Content -->
+            <div class="swiper-slide">
+              <figure class="figure__ loading-omd asp-om">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/home_slider/02.jpg"
+                  alt="deals section block"
+                />
+              </figure>
+              <div class="slide_content">
+                <h2 class="title__">
+                  Twaaroq
+                  <span class="color_change">For Finance</span>
+                  Consulting
+                </h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque recusandae natus cum optio porro veniam similique
+                  voluptatum ea minima corporis! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Doloremque recusandae natus cum
+                  optio porro veniam similique voluptatum ea minima corporis!
+                </p>
+              </div>
+            </div>
+            <!-- End Slide Content -->
+
+            <!-- Start Slide Content -->
+            <div class="swiper-slide">
+              <figure class="figure__ loading-omd asp-om">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/home_slider/01.jpg"
+                  alt="deals section block"
+                />
+              </figure>
+              <div class="slide_content">
+                <h2 class="title__">
+                  Twaaroq
+                  <span class="color_change">For Finance</span>
+                  Consulting
+                </h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque recusandae natus cum optio porro veniam similique
+                  voluptatum ea minima corporis!
+                </p>
+              </div>
+            </div>
+            <!-- End Slide Content -->
+
+            <!-- Start Slide Content -->
+            <div class="swiper-slide">
+              <figure class="figure__ loading-omd asp-om">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/home_slider/02.jpg"
+                  alt="deals section block"
+                />
+              </figure>
+              <div class="slide_content">
+                <h2 class="title__">
+                  Twaaroq
+                  <span class="color_change">For Finance</span>
+                  Consulting
+                </h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque recusandae natus cum optio porro veniam similique
+                  voluptatum ea minima corporis! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Doloremque recusandae natus cum
+                  optio porro veniam similique voluptatum ea minima corporis!
+                </p>
+              </div>
+            </div>
+            <!-- End Slide Content -->
+          </div>
+
+          <div class="swiper_buttons_group__">
+            <div class="buttons_wrapper">
+              <div class="swiper-button-prev single_page_button"></div>
+              <div class="swiper-button-next single_page_button"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Slide Section -->
+
+    <!-- Start about us Section -->
+
+    <section
+      class="home_page_section_background about_us_section__ section_defaults"
+    >
+      <div class="container">
+        <div class="row row_modify">
+          <div class="col-12 col-lg-6">
+            <div class="main_head_wrapper__">
+              <h2 class="site_main_title">About Company</h2>
+            </div>
+            <p class="parag__">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              officia porro provident, eius magnam ipsam sequi ullam quos
+              impedit consequuntur!
+            </p>
+
+            <div class="site_info_wrapper">
+              <div class="info_block__">
+                <span class="number__">1.5K</span>
+                Client
+              </div>
+              <div class="info_block__">
+                <span class="number__">+ 40</span>
+                Consultation
+              </div>
+              <div class="info_block__">
+                <span class="number__">+ 7</span>
+                Years of experience
+              </div>
+            </div>
+
+            <button class="submit-button__ about_us_button__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/shapes/arrow-right.svg"
+                  alt=".."
+                />
+              </figure>
+
+              See More
+            </button>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="about_us_photo">
+              <figure class="figure__ loading-omd asp-om">
+                <video src=""></video>
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/about_us/about_us.jpg"
+                  alt="deals section block"
+                />
+                <div class="overlay__"></div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Intro Section -->
+
+    <!-- Start Our Service -->
+    <section
+      class="home_page_section_background our_service_section section_defaults"
+    >
+      <div class="container">
+        <div class="main_head_wrapper__ center__">
+          <h2 class="site_main_title">Our Services</h2>
+          <p class="sub-title__">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+            aperiam blanditiis eaque eveniet quae delectus?
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="service_card__">
+              <div class="img_block__">
+                <figure class="figure__ icon__ loading-omd">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/service/01.svg"
+                    alt=".."
+                  />
+                </figure>
+              </div>
+              <div class="description__">
+                <h2 class="title__">Tax Consulting</h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Esse, libero ad. Voluptatem iure dolor suscipit quibusdam vel
+                </p>
+                <button class="submit-button__ main_site_button__">
+                  <figure class="figure__ icon__ loading-omd">
+                    <img
+                      class="lazy-omd img-om"
+                      data-src="assets/images/shapes/arrow-right-linear.svg"
+                      alt=".."
+                    />
+                  </figure>
+
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="service_card__">
+              <div class="img_block__">
+                <figure class="figure__ icon__ loading-omd">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/service/02.svg"
+                    alt=".."
+                  />
+                </figure>
+              </div>
+              <div class="description__">
+                <h2 class="title__">Real Estate Consulting</h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Esse, libero ad. Voluptatem iure dolor suscipit quibusdam vel
+                </p>
+                <button class="submit-button__ main_site_button__">
+                  <figure class="figure__ icon__ loading-omd">
+                    <img
+                      class="lazy-omd img-om"
+                      data-src="assets/images/shapes/arrow-right-linear.svg"
+                      alt=".."
+                    />
+                  </figure>
+
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="service_card__">
+              <div class="img_block__">
+                <figure class="figure__ icon__ loading-omd">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/service/03.svg"
+                    alt=".."
+                  />
+                </figure>
+              </div>
+              <div class="description__">
+                <h2 class="title__">Administrative Consultations</h2>
+                <p class="parag__">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Esse, libero ad. Voluptatem iure dolor suscipit quibusdam vel
+                </p>
+                <button class="submit-button__ main_site_button__">
+                  <figure class="figure__ icon__ loading-omd">
+                    <img
+                      class="lazy-omd img-om"
+                      data-src="assets/images/shapes/arrow-right-linear.svg"
+                      alt=".."
+                    />
+                  </figure>
+
+                  See More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our Service -->
+
+    <!-- Start Our Partners -->
+    <section class="our_partners_section section_defaults">
+      <div class="container">
+        <div class="main_head_wrapper__ center__">
+          <h2 class="site_main_title">Our Partner</h2>
+          <p class="sub-title__">
+            This text is an example of a text that can be replaced in a ransom
+            of other texts, an addition To increase
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner_card__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/our_partners/01.png"
+                  alt=".."
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner_card__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/our_partners/02.png"
+                  alt=".."
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner_card__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/our_partners/03.png"
+                  alt=".."
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner_card__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/our_partners/04.png"
+                  alt=".."
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner_card__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/our_partners/01.png"
+                  alt=".."
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner_card__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/our_partners/02.png"
+                  alt=".."
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner_card__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/our_partners/03.png"
+                  alt=".."
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="partner_card__">
+              <figure class="figure__ icon__ loading-omd">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/our_partners/04.png"
+                  alt=".."
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our Partners -->
+
+    <!-- Start Contact Us -->
+    <section class="home_page_section_background form_section section_defaults">
+      <div class="container">
+        <div class="main_head_wrapper__">
+          <h2 class="site_main_title">Contact us now</h2>
+          <p class="sub-title__">
+            Please enter your data to contact us and you will be answered as
+            soon as possible
+          </p>
+        </div>
+        <div class="row contact_us_row_modify__">
+          <div class="col-12 col-lg-6">
+            <form action="" class="consultation_request_form">
+              <div class="input_group__">
+                <p class="label__">The Name</p>
+                <div class="icon_input_group name__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter The Name"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <p class="label__">E-mail</p>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter The E-mail"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <p class="label__">Mobile Number</p>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter The Mobile Number"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <p class="label__">The Text of The Message</p>
+                <div class="icon_input_group textarea__">
+                  <textarea
+                    class="textarea-om"
+                    placeholder="Enter The Text of The Message"
+                    name="your_message"
+                    id=""
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="final_buttons_wrapper__">
+                <button class="submit-button__ full_width__">Send Now</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <figure class="figure__ loading-omd asp-om">
+              <img
+                class="lazy-omd img-om"
+                data-src="assets/images/contact_us/contactus.png"
+                alt="deals section block"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!-- Start Our customers' opinions -->
+    <section
+      class="home_page_section_background customers_opinions_section section_defaults"
+    >
+      <div class="container">
+        <div class="main_head_wrapper__ center__">
+          <h2 class="site_main_title">The Views of Our Customers</h2>
+          <p class="sub-title__">
+            This text is an example of a text that can be replaced in a ransom
+            of other texts, an addition To increase
+          </p>
+        </div>
+        <div class="row customers_opinions_row_modify">
+          <div class="col-12 col-lg-6">
+            <div class="customer_opinion_card__">
+              <div class="img_block__">
+                <figure class="figure__ loading-omd asp-om">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/customers'-opinions/person.png"
+                    alt="deals section block"
+                  />
+                </figure>
+              </div>
+
+              <div class="head_wrapper__">
+                <h2 class="name__">Mohammed Abd Allah</h2>
+                <p class="date__">22 April</p>
+              </div>
+              <p class="parag__">
+                This text is an example of a text that can be replaced in a
+                ransom of other texts In addition to increasing the number of
+                letters generated by the application.If you need To a greater
+                number of paragraphs, the generator of the Arabic text allows
+                you to increase the number Paragraphs as you want,
+              </p>
+              <div class="rating_wrapper__">
+                <i class="rating_star_icon__ fa fa-star"></i>
+                <i class="rating_star_icon__ fa fa-star active"></i>
+                <i class="rating_star_icon__ fa fa-star active"></i>
+                <i class="rating_star_icon__ fa fa-star active"></i>
+                <i class="rating_star_icon__ fa fa-star active"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="customer_opinion_card__">
+              <div class="img_block__">
+                <figure class="figure__ loading-omd asp-om">
+                  <img
+                    class="lazy-omd img-om"
+                    data-src="assets/images/customers'-opinions/person.png"
+                    alt="deals section block"
+                  />
+                </figure>
+              </div>
+
+              <div class="head_wrapper__">
+                <h2 class="name__">Mohammed Abd Allah</h2>
+                <p class="date__">22 April</p>
+              </div>
+              <p class="parag__">
+                This text is an example of a text that can be replaced in a
+                ransom of other texts In addition to increasing the number of
+                letters generated by the application.If you need To a greater
+                number of paragraphs, the generator of the Arabic text allows
+                you to increase the number Paragraphs as you want,
+              </p>
+              <div class="rating_wrapper__">
+                <i class="rating_star_icon__ fa fa-star"></i>
+                <i class="rating_star_icon__ fa fa-star active"></i>
+                <i class="rating_star_icon__ fa fa-star active"></i>
+                <i class="rating_star_icon__ fa fa-star active"></i>
+                <i class="rating_star_icon__ fa fa-star active"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our customers' opinions -->
+
+    <footer class="footer_sec__">
+      <div class="container">
+        <div class="footer_content__">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">Important Links</h2>
+              <ul class="footer_list__ list-unstyled">
+                <li><a href="sectors.html">Main</a></li>
+                <li><a href="our_message_and_goals.html">About Company</a></li>
+                <li><a href="our_partners.html">Our Partner</a></li>
+                <li><a href="our_services.html">Our Services</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">Services</h2>
+              <ul class="footer_list__ list-unstyled">
+                <li><a href="#">Financial Consultations</a></li>
+                <li><a href="#">Family Consulting</a></li>
+                <li><a href="#">Bank Consulting</a></li>
+                <li><a href="#">Educational Counseling</a></li>
+                <li><a href="#">Islamic Counseling</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">Connect Us</h2>
+              <ul class="footer_socials__ list-unstyled">
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/twitter.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/instagram.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/facebook.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">Call Us</h2>
+              <ul class="footer_list__ list-unstyled contact_info">
+                <li class="li__">
+                  <a href="tel:01054784175" class="link__">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/socials/calling.png"
+                        alt=".."
+                      />
+                    </figure>
+
+                    01054784175
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="mailto:Mohamed_ali987@hotmail.com" class="link__">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/socials/email.png"
+                        alt=".."
+                      />
+                    </figure>
+
+                    Mohamed_ali987@hotmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="copyrights_content___">
+      <div class="container">
+        <p class="copyrights__">
+          All rights reserved for digital sources 2023
+        </p>
+      </div>
+    </section>
+
+    <!-- Start Modals -->
+
+    <!-- log in Modal -->
+    <div
+      class="modal fade log_in_modal"
+      id="log_in_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ icon__ loading-omd" aria-hidden="true">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/modal/close.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+
+            <h2 class="title">Sign In</h2>
+            <p class="sub_title__">Please Enter Your Data to Log In</p>
+
+            <form action="">
+              <div class="input_group__">
+                <label class="label__">E-mail</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter The E-mail"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">Password</label>
+                <div class="password-group-om icon_input_group password__">
+                  <input
+                    class="input__"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+
+                  <button class="show-password-button-om">
+                    <figure class="figure__">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.339"
+                        height="18.286"
+                        viewBox="0 0 21.339 18.286"
+                      >
+                        <path
+                          class="icon__"
+                          id="Icon_ionic-md-eye-off"
+                          data-name="Icon ionic-md-eye-off"
+                          d="M12.922,8.348a4.837,4.837,0,0,1,4.853,4.814,4.631,4.631,0,0,1-.348,1.762l2.833,2.81a11.384,11.384,0,0,0,3.329-4.572A11.492,11.492,0,0,0,9.05,6.614l2.1,2.081A4.8,4.8,0,0,1,12.922,8.348Zm-9.7-2.624,2.214,2.2.448.443a11.33,11.33,0,0,0-3.633,4.8,11.509,11.509,0,0,0,14.919,6.41l.41.4,2.843,2.81,1.233-1.224L4.45,4.5Zm5.362,5.319,1.5,1.491a2.728,2.728,0,0,0-.076.624,2.9,2.9,0,0,0,2.91,2.886,2.737,2.737,0,0,0,.629-.076l1.5,1.491a4.827,4.827,0,0,1-6.986-4.3A4.757,4.757,0,0,1,8.583,11.043Zm4.181-.748,3.057,3.033.019-.152a2.9,2.9,0,0,0-2.91-2.886Z"
+                          transform="translate(-2.25 -4.5)"
+                          fill="#aaa"
+                        />
+                      </svg>
+                    </figure>
+                  </button>
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <div class="form_label_for_info__">
+                  <button
+                    class="button__ forget_password_model_button__"
+                    data-toggle="modal"
+                    data-target="#forget_password_modal"
+                    data-dismiss="modal"
+                  >
+                    Forget Password ?
+                  </button>
+                </div>
+              </div>
+              <div class="input_group__">
+                <input
+                  class="submit-button__ full_width__ input__"
+                  type="submit"
+                  value="Sign In"
+                />
+              </div>
+              <div class="input_group__">
+                <button
+                  class="submit-button__ full_width__ modal_bordered_button__"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#sign_up_modal"
+                  data-dismiss="modal"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign up Modal -->
+    <div
+      class="modal fade sign_up_modal"
+      id="sign_up_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ icon__ loading-omd" aria-hidden="true">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/modal/close.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+
+            <h2 class="title">Sign Up</h2>
+            <p class="sub_title__">
+              Please enter your data to create a new account
+            </p>
+
+            <form action="">
+              <div class="input_group__">
+                <label class="label__">Name</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter The Name"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">E-mail</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter The E-mail"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">Mobile Number</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter The Mobile Number"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">Password</label>
+                <div class="password-group-om icon_input_group password__">
+                  <input
+                    class="input__"
+                    type="password"
+                    name="password"
+                    placeholder="Enter The Password"
+                  />
+
+                  <button class="show-password-button-om">
+                    <figure class="figure__">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.339"
+                        height="18.286"
+                        viewBox="0 0 21.339 18.286"
+                      >
+                        <path
+                          class="icon__"
+                          id="Icon_ionic-md-eye-off"
+                          data-name="Icon ionic-md-eye-off"
+                          d="M12.922,8.348a4.837,4.837,0,0,1,4.853,4.814,4.631,4.631,0,0,1-.348,1.762l2.833,2.81a11.384,11.384,0,0,0,3.329-4.572A11.492,11.492,0,0,0,9.05,6.614l2.1,2.081A4.8,4.8,0,0,1,12.922,8.348Zm-9.7-2.624,2.214,2.2.448.443a11.33,11.33,0,0,0-3.633,4.8,11.509,11.509,0,0,0,14.919,6.41l.41.4,2.843,2.81,1.233-1.224L4.45,4.5Zm5.362,5.319,1.5,1.491a2.728,2.728,0,0,0-.076.624,2.9,2.9,0,0,0,2.91,2.886,2.737,2.737,0,0,0,.629-.076l1.5,1.491a4.827,4.827,0,0,1-6.986-4.3A4.757,4.757,0,0,1,8.583,11.043Zm4.181-.748,3.057,3.033.019-.152a2.9,2.9,0,0,0-2.91-2.886Z"
+                          transform="translate(-2.25 -4.5)"
+                          fill="#aaa"
+                        />
+                      </svg>
+                    </figure>
+                  </button>
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <label class="label__">Confirm Password</label>
+                <div class="password-group-om icon_input_group password__">
+                  <input
+                    class="input__"
+                    type="password"
+                    name="password"
+                    placeholder="Confirm The Password"
+                  />
+
+                  <button class="show-password-button-om">
+                    <figure class="figure__">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.339"
+                        height="18.286"
+                        viewBox="0 0 21.339 18.286"
+                      >
+                        <path
+                          class="icon__"
+                          id="Icon_ionic-md-eye-off"
+                          data-name="Icon ionic-md-eye-off"
+                          d="M12.922,8.348a4.837,4.837,0,0,1,4.853,4.814,4.631,4.631,0,0,1-.348,1.762l2.833,2.81a11.384,11.384,0,0,0,3.329-4.572A11.492,11.492,0,0,0,9.05,6.614l2.1,2.081A4.8,4.8,0,0,1,12.922,8.348Zm-9.7-2.624,2.214,2.2.448.443a11.33,11.33,0,0,0-3.633,4.8,11.509,11.509,0,0,0,14.919,6.41l.41.4,2.843,2.81,1.233-1.224L4.45,4.5Zm5.362,5.319,1.5,1.491a2.728,2.728,0,0,0-.076.624,2.9,2.9,0,0,0,2.91,2.886,2.737,2.737,0,0,0,.629-.076l1.5,1.491a4.827,4.827,0,0,1-6.986-4.3A4.757,4.757,0,0,1,8.583,11.043Zm4.181-.748,3.057,3.033.019-.152a2.9,2.9,0,0,0-2.91-2.886Z"
+                          transform="translate(-2.25 -4.5)"
+                          fill="#aaa"
+                        />
+                      </svg>
+                    </figure>
+                  </button>
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <div class="checkbox-group-om">
+                  <input class="checkbox-om" type="checkbox" id="remember_me" />
+                  <label class="checkbox-label-om" for="remember_me"></label>
+                  <label
+                    class="label__ form_label_for_info__"
+                    for="remember_me"
+                  >
+                    Agree
+                    <a class="link__" href="terms_and_conditions.html"
+                      >Terms and Conditions</a
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <input
+                  class="submit-button__ full_width__ input__"
+                  type="submit"
+                  value="Sign Up"
+                />
+              </div>
+              <div class="input_group__">
+                <button
+                  class="submit-button__ full_width__ modal_bordered_button__"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#log_in_modal"
+                  data-dismiss="modal"
+                >
+                  Sign In
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- forget password Modal -->
+    <div
+      class="modal fade forget_password_modal"
+      id="forget_password_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ icon__ loading-omd" aria-hidden="true">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/modal/close.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+
+            <h2 class="title">Return The Password</h2>
+            <p class="sub_title__">Please enter your mobile number</p>
+
+            <form action="">
+              <div class="input_group__">
+                <label class="label__">Mobile number</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter the mobile number"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <button
+                  class="submit-button__ full_width__ input__"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#new_password_modal"
+                  data-dismiss="modal"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- new password Modal -->
+    <div
+      class="modal fade new_password_modal"
+      id="new_password_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <figure class="figure__ icon__ loading-omd" aria-hidden="true">
+                <img
+                  class="lazy-omd img-om"
+                  data-src="assets/images/modal/close.svg"
+                  alt=".."
+                />
+              </figure>
+            </button>
+
+            <h2 class="title">Set a new password</h2>
+            <p class="sub_title__">Please enter the new traffic word</p>
+
+            <form action="">
+              <div class="input_group__">
+                <label class="label__">New Password</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Enter the new password"
+                  />
+                </div>
+              </div>
+              <div class="input_group__">
+                <label class="label__">Confirm New Password</label>
+                <div class="icon_input_group phone__">
+                  <input
+                    class="input__"
+                    type="text"
+                    placeholder="Confirm the New Password"
+                  />
+                </div>
+              </div>
+
+              <div class="input_group__">
+                <button
+                  class="submit-button__ full_width__ input__"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#new_password_modal"
+                  data-dismiss="modal"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- log out Modal -->
+    <div
+      class="modal fade log_out_modal"
+      id="log_out_modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal_block__">
+            <figure class="figure__ img__ loading-omd asp-om">
+              <img
+                class="lazy-omd img-om"
+                data-src="assets/images/modal/logout-modal-icon.svg"
+                alt=".."
+              />
+            </figure>
+            <h2 class="title">Sign Out</h2>
+            <p class="parag__">Are you sure that you want to get out of the exit</p>
+
+            <div class="links_group">
+              <a class="submit-button__ full_width__ log_out_link__" href="#"
+                >Exit</a
+              >
+              <a
+                class="submit-button__ full_width__ log_out_cancellation__"
+                href="#"
+                >Cancel</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Modals -->
+
+    <!-- start js include  -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
+  </body>
+</html>

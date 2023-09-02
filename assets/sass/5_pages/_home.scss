@@ -1,252 +1,264 @@
-.intro_section {
-  position: relative;
-  background-image: url(../images/intro.jpg);
-  padding: 95px 0 112px;
-
-  @include sm {
-    padding: 50px 0;
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($secondaryColor, 0.8);
-    z-index: 1;
-  }
-
-  .intro_section_content__ {
+.slider_section__ {
+  .home_slider {
     position: relative;
-    width: 100%;
-    z-index: 11;
-
-    .head__ {
-      font-size: 44px;
-      font-weight: bold;
-      color: #fff;
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      width: 90%;
-
-      @include sm {
-        width: 100%;
-        font-size: 30px;
-      }
-    }
-
-    .site_link {
-      margin-bottom: 50px;
-    }
   }
-}
 
-.sectors_section {
-  padding: 50px 0;
-}
-
-.top_deals_section {
-  padding: 45px 0 40px;
-  background-color: #fff;
-}
-
-.new_deals_section {
-  padding: 45px 0 40px;
-}
-
-.add_deal_section {
-  background-color: #fff;
-  padding: 60px 0 80px;
-
-  .add_deal_content {
+  .swiper-slide {
     position: relative;
-    border-radius: 30px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    background-image: url(../images/add_deal/add_deal_background_photo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 50px 60px;
 
-    @include sm {
-      flex-direction: column-reverse;
-    }
-
-    @include xxs {
-      padding: 20px;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      inset-inline-start: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($secondaryColor, 0.8);
-      z-index: 1;
-    }
-  }
-
-  .add_deal_description {
-    z-index: 10;
-    max-width: 500px;
-
-    .head__ {
-      color: #fff;
-      font-size: 40px;
-      font-weight: bold;
-      margin-bottom: 30px;
-
-      @include md {
-        font-size: 35px;
-      }
-
-      @include sm {
-        font-size: 30px;
-        text-align: center;
-      }
-    }
-
-    .prag__ {
-      color: #fff;
-      font-size: 16px;
-      margin-bottom: 30px;
-
-      @include sm {
-        text-align: center;
-      }
-    }
-  }
-
-  .add_section_logo {
-    padding: 67px 72px;
-    background-color: #fff;
-    border-radius: 40px;
-    z-index: 10;
-    width: 350px;
-    height: 324px;
-
-    @include xxs {
-      width: 250px;
-      height: 224px;
-    }
-  }
-}
-
-.app_download_section {
-  padding-bottom: 80px;
-  background-color: #fff;
-
-  .app_download_block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @include sm {
-      flex-direction: column-reverse;
-    }
-
-  }
-
-  .description__ {
-    max-width: 485px;
-
-    @include sm {
-      text-align: center;
-    }
-
-    .head {
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 1.7;
-      margin-bottom: 10px;
+    .figure__ {
+      padding-bottom: 600px;
       position: relative;
 
       @include xxs {
-        width: fit-content;
-        font-size: 25px;
-        margin: 10px auto;
+        padding-bottom: 450px;
       }
 
-      .head_part_color_chang {
-        color: $primaryColor;
-      }
-
-      &::before {
+      &::after {
         content: "";
         position: absolute;
-        border-radius: 4px;
-        width: 106px;
-        height: 18px;
-        bottom: 5px;
-        right: 0;
-        background-color: rgba($secondaryColor, 0.13);
-
-        @include sm {
-          right: 48px;
-        }
-
-        @include xxs {
-          width: 70px;
-          right: 17px;
-        }
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(#000, 0.7);
       }
     }
+  }
 
-    .prag {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.7;
-      margin-bottom: 40px;
-      max-width: 45 6px;
+  .slide_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @include xs {
+      top: calc(50% - 50px);
+      min-width: 100%;
+      padding: 0 20px;
     }
 
-    .download_links_group {
-      display: flex;
-      gap: 20px;
+    .title__ {
+      color: #fff;
+      font-size: 55px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      max-height: 89px;
+      overflow: hidden;
 
-      @include xs {
-        justify-content: center;
+
+      @include md {
+        font-size: 45px;
+      }
+
+      @include sm {
+        font-size: 30px;
       }
 
       @include xxs {
-        flex-direction: column;
-        align-items: center;
+        font-size: 20px;
+      }
+      
+      @include dir {
+        font-size: 45px;
+        max-height: 110px;
+
+        @include sm {
+          font-size: 30px;
+        }
+  
+        @include xxs {
+          font-size: 20px;
+        }
       }
 
-      .download_link {
-        transition: 0.5s;
+      .color_change {
+        color: $primaryColor;
+      }
+    }
 
-        @include xs {
-          flex-direction: column;
-        }
+    .parag__ {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      // max-width: 570px;
+      max-height: 132px;
+      overflow: hidden;
 
-        &:hover {
-          transform: scale(1.05);
-        }
+      @include sm {
+        font-size: 18px;
+        max-height: 142px;
+      }
+
+      @include xs {
+        font-size: 16px;
+        max-height: 132px;
       }
     }
   }
 
-  .section_photo {
+  .swiper_buttons_group__ {
+    position: absolute;
+    bottom: 112px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+
+    .buttons_wrapper {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+.about_us_section__ {
+  .row_modify {
     @include sm {
-      width: 60%;
-      margin: 0 auto;
-    }
-
-    @include xs {
-      width: 80%;
-      margin: 0 auto;
+      flex-direction: column-reverse;
+      gap: 50px;
     }
   }
 
+  .site_main_title {
+    margin-bottom: 35px;
+
+    @include sm {
+      text-align: center;
+    }
+  }
+
+  .parag__ {
+    font-size: 20px;
+    font-weight: 500;
+    color: $headingMainColor;
+    margin-bottom: 35px;
+    max-width: 478px;
+    text-align: start;
+
+    @include sm {
+      text-align: center;
+      margin: 0px auto 35px;
+    }
+
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+
+  .site_info_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 35px;
+
+    @include sm {
+      justify-content: center;
+    }
+
+    .info_block__ {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+      color: $headingFourthColor;
+
+      @include xxs {
+        font-size: 14px;
+      }
+
+      .number__ {
+        font-size: 45px;
+        font-weight: 700;
+        color: $primaryColor;
+        margin: 0;
+
+        @include xxs {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .about_us_photo {
+    padding: 30px;
+    position: relative;
+
+    .figure__ {
+      padding-bottom: 85.51%;
+      // max-height: 502px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      min-width: 100%;
+
+      @include xs {
+        max-height: 250px;
+      }
+
+      @include xxs {
+        max-height: 300px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(#000, 0.39);
+      }
+    }
+
+    &::before {
+      content: url(../images/shapes/about_us_photo_shape_up.png);
+      position: absolute;
+      top: 0;
+      inset-inline-end: 0;
+
+    }
+
+    &::after {
+      content: url(../images/shapes/about_us_photo_shape_down.png);
+      position: absolute;
+      bottom: -7px;
+      inset-inline-start: 0;
+    }
+
+    @include dir {
+      &::before {
+        inset-inline-end: unset;
+        inset-inline-start: 0;
+      }
+      
+      &::after {
+        inset-inline-start: unset;
+        inset-inline-end: 0;
+      }
+    }
+  }
+
+  .submit-button__ {
+    @include sm {
+      margin: 0 auto;
+    }
+  }
+}
+
+.customers_opinions_section {
+  .main_head_wrapper__ {
+    margin-bottom: 70px;
+  }
+
+  .customers_opinions_row_modify {
+    @include sm {
+      gap: 65px;
+    }
+  }
 }

@@ -1,0 +1,27 @@
+.consultation_box {
+  margin-bottom: 60px;
+}
+
+.chat_block__ {
+  background-color: #fff;
+  padding: 60px 0;
+  border-radius: $mainBorderRadius;
+  box-shadow: 0 3px 6px $shadowColor;
+
+  @include xs {
+    padding: 40px 0;
+  }
+}
+
+.message_input_wrapper {
+  margin: 0 30px;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  border-radius: $mainBorderRadius;
+  border: 1px solid $primaryColor;
+
+  .input__ {
+    border: 0;
+  }
+}

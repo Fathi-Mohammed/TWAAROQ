@@ -1,0 +1,68 @@
+.service_card__ {
+  background-color: #fff;
+  border-radius: $mainBorderRadius;
+  box-shadow: 0 3px 6px $shadowColor;
+	border: 1px solid transparent;
+	transition: 0.5s;
+  margin-bottom: 30px;
+
+  .img_block__ {
+    padding: 35px 0;
+
+    .icon__ {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+			transition: 0.5s;
+    }
+  }
+
+  .description__ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    padding-bottom: 45px;
+
+    .title__ {
+      font-size: 28px;
+      font-weight: 600;
+      color: $headingMainColor;
+      margin-bottom: 20px;
+      text-align: center;
+
+      @include dir {
+        font-size: 26px;
+      }
+    }
+
+    .parag__ {
+      font-size: 16px;
+      font-weight: 500;
+      color: $headingMainColor;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+	&:hover {
+		box-shadow:0 3px 6px $primaryColor;
+		border-color: $primaryColor;
+
+		.main_site_button__ {
+			color: #fff;
+			background-color: $primaryColor;
+
+			.icon__ {
+				filter: brightness(0) invert(1);
+			}
+			
+			&::after {
+				top: 10px;
+				inset-inline-start: -10px;	
+				opacity: 1;
+			}
+    }
+	}
+}

@@ -1,14 +1,73 @@
-.consultation_request_page {
-  .title {
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
+.advisor_card__ {
+  width: 100%;
+  position: relative;
+
+  .figure__ {
+    padding-bottom: 131.081%;
+    overflow: hidden;
   }
 
-  .parag__ {
-    font-size: 16px;
-    font-weight: 500;
+  .advisor_name__ {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
+    margin: 0;
+    border-radius: 50px 50px 0 0;
+    background-color: $primaryColor;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.5s;
   }
+
+  &:hover {
+    .figure__ {
+      .img-om {
+        transform: scale(1.2);
+      }
+    }
+
+    .advisor_name__ {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.our_advisors_section {
+	.swiper-container {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+
+		.buttons_wrapper {
+			position: unset;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			height: 33px;
+			
+			.swiper-button-next,
+			.swiper-button-prev {
+				margin: 0;
+				background-color: rgba($primaryColor,0.4);
+
+				&::after {
+					content: url("../images/shapes/Vector2.svg");
+					filter: unset;
+				}
+				
+				&:hover {
+					background-color: rgba($primaryColor,1);
+
+					&::after {
+						filter: brightness(0) invert(1);
+					}
+				}
+			}
+		}
+	}
 }

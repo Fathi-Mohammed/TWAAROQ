@@ -19,15 +19,16 @@
 @import "3_components/bootstrap_accordion";
 @import "3_components/bootstrap_modal";
 @import "3_components/bootstrap_tabs";
-@import "3_components/breadcrumb";
 @import "3_components/main_site_link";
 @import "3_components/main_heading";
 @import "3_components/pagination";
-@import "3_components/sector_block";
-@import "3_components/deal_block";
-@import "3_components/sector_divisions_block";
 @import "3_components/search_form";
 @import "3_components/message_block";
+@import "3_components/service_card";
+@import "3_components/partner_card";
+@import "3_components/customer_opinion_card";
+@import "3_components/page_head";
+@import "3_components/consultation_box";
 
 // 4_layout
 @import "4_layout/header";
@@ -38,15 +39,7 @@
 // 5_pages
 @import "5_pages/default_page";
 @import "5_pages/home";
-@import "5_pages/registerration_pages";
-@import "5_pages/deals";
-@import "5_pages/add_deal";
 @import "5_pages/contact_us";
 @import "5_pages/consultation_request";
 @import "5_pages/terms_and_conditions";
-@import "5_pages/notifications";
-@import "5_pages/profile";
-@import "5_pages/single_chat";
-@import "5_pages/all_message";
-@import "5_pages/division";
-@import "5_pages/my_account";
+@import "5_pages/chat";

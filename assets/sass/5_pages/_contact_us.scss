@@ -1,37 +1,43 @@
 .contact_page {
-  margin-bottom: 40px;
+  padding: 100px 0 60px;
 }
 
-.contact_us_form_wrapper__ {
-  .site_head__ {
-    color: $secondaryColor;
-    font-size: 18px;
-    margin-bottom: 25px;
+.contacts_section {
+  margin-bottom: 100px;
+}
 
-    @include sm {
-      text-align: center;
+.contact_box__ {
+  background-color: rgba($primaryColor,0.13);
+  border-radius: $mainBorderRadius;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 30px;
 
-      &::before,
-      &::after {
-        left: 50%;
-        transform: translateX(-50%);
-        inset-inline-start: unset;
-      }
+  .figure__ {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 41px;
+      bottom: 30px;
+      background-color: rgba($primaryColor,0.48);
+      transform: rotate(51deg);
+      border-radius: 5px;
     }
-  }
-
-  .form_image__ {
-    padding-bottom: 50%;
   }
 
   .title__ {
-    font-size: 27px;
+    color: $headingMainColor;
+    font-size: 18px;
     font-weight: 700;
-    margin-bottom: 38px;
+    margin-bottom: 10px;
+  }
 
-    @include sm {
-      font-size: 20px;
-      text-align: center;
-    }
+  .content__ {
+    font-size: 16px;
+    color: $paragraphMainColor;
   }
 }

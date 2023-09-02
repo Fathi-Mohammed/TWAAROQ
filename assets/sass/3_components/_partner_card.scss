@@ -1,0 +1,32 @@
+.partner_card__ {
+  border-radius: $mainBorderRadius;
+  box-shadow: 0 3px 6px $shadowColor;
+  border: 1px solid transparent;
+  display: block;
+  padding: 5px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  transition: 0.5s;
+
+  .figure__ {
+    align-items: center;
+    justify-content: center;
+    
+    .img-om {
+      // height: 125px;
+      max-height: 125px;
+      transition: 0.5s;
+    }
+  }
+
+  &:hover {
+		box-shadow:0 3px 6px $primaryColor;
+		border-color: $primaryColor;
+
+    .figure__ {
+      .img-om {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

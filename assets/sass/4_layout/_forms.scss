@@ -5,6 +5,7 @@
 @import "forms/checkbox_input";
 @import "forms/radio_input";
 @import "forms/datepicker";
+@import "forms/file_input";
 
 .form_wrapper__ {
   margin: 0 auto;
@@ -65,7 +66,7 @@
 
   .title__ {
     font-size: 28px;
-    color: $headingSecondaryColor;
+    color: $headingprimaryColor;
     margin-bottom: 0;
     font-weight: bold;
 
@@ -95,7 +96,7 @@
 
   .link__ {
     font-size: 14px;
-    color: $secondaryColor;
+    color: $primaryColor;
     margin-top: 10px;
   }
 
@@ -106,6 +107,7 @@
 
 .input_group__ {
   margin-bottom: 20px;
+  text-align: start;
 
   &.flex_group__ {
     display: flex;
@@ -133,17 +135,17 @@
   align-items: center;
 
   .input__ {
-    border-radius: 0 $mainBorderRidus $mainBorderRidus 0;
+    border-radius: 0 $mainBorderRadius $mainBorderRadius 0;
 
     @include dir {
-      border-radius: $mainBorderRidus 0 0 $mainBorderRidus;
+      border-radius: $mainBorderRadius 0 0 $mainBorderRadius;
     }
   }
 
   .unit__ {
     min-width: 67px;
     height: 56px;
-    border-radius: $mainBorderRidus 0 0 $mainBorderRidus;
+    border-radius: $mainBorderRadius 0 0 $mainBorderRadius;
     border: 1px solid $borderBreakColor;
     display: flex;
     align-items: center;
@@ -153,14 +155,14 @@
 }
 
 .label__ {
-  color: $headingSecondaryColor;
+  color: $headingprimaryColor;
   font-size: 15px;
   margin-bottom: 15px;
   display: block;
 
   .optional__ {
     font-size: 13px;
-    color: $paragraphSecondaryColor;
+    color: $paragraphprimaryColor;
     margin-inline-start: 5px;
   }
 
@@ -178,22 +180,21 @@
 
   .show-password-button-om {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    inset-inline-end: 15px;
     height: 100%;
     display: flex;
     align-items: center;
     outline: none;
-    width: 36px;
+    width: 22px;
     padding: 0;
+    transform: translateY(-50%);
     background: transparent;
     border: none;
     cursor: pointer;
-    color: #969696;
 
-    @include dir {
-      left: unset;
-      right: 0;
+    .icon__ {
+      fill: #aaa;
     }
 
     &:focus {
@@ -201,59 +202,9 @@
     }
 
     &.show-om {
-      color: $secondaryColor;
-    }
-  }
-}
-
-.icon_input_group {
-  position: relative;
-
-  .input__,
-  .textarea-om {
-    padding-inline-start: 55px;
-  }
-
-  &::after {
-    position: absolute;
-    width: 29px;
-    height: 29px;
-    top: 50%;
-    inset-inline-start: 15px;
-    transform: translateY(-50%);
-    filter: grayscale(1);
-    pointer-events: none;
-  }
-
-  &.name__ {
-    &::after {
-      content: url(../images/shapes/user.svg);
-    }
-  }
-
-  &.phone__ {
-    &::after {
-      content: url(../images/shapes/input_phone_icon.svg);
-    }
-  }
-
-  &.password__ {
-    &::after {
-      content: url(../images/shapes/password.svg);
-    }
-  }
-
-  &.textarea__ {
-    &::after {
-      content: url(../images/shapes/textarea.svg);
-      top: 20px;
-      transform: unset;
-    }
-  }
-
-  &:focus-within {
-    &::after {
-      filter: none;
+      .icon__ {
+        fill: $primaryColor;
+      }
     }
   }
 }
@@ -262,7 +213,7 @@
   .drag_file_label {
     border: 1px solid $borderBreakColor;
     width: 100%;
-    border-radius: $mainBorderRidus;
+    border-radius: $mainBorderRadius;
     margin-bottom: 20px;
     cursor: pointer;
 
@@ -292,7 +243,7 @@
 
         .upload_rules {
           font-size: 12px;
-          color: $paragraphSecondaryColor;
+          color: $paragraphprimaryColor;
           margin: 0;
         }
       }
@@ -316,7 +267,7 @@
           color: $headingMainColor;
 
           .file_size {
-            color: $paragraphSecondaryColor;
+            color: $paragraphprimaryColor;
             margin-inline-start: 5px;
           }
         }
@@ -350,5 +301,61 @@
 
   .drug_file_input {
     display: none;
+  }
+}
+
+.form_section {
+  .main_head_wrapper__ {
+    .sub-title__ {
+      max-width: 576px;
+    }
+  }
+  
+  .contact_us_row_modify__ {
+    align-items: center;
+
+    @include sm {
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
+  }
+
+  .input__,
+  .textarea-om {
+    background-color: $mainBackgroundColor;
+  }
+  
+  .select__ {
+    .btn {
+      background-color: $mainBackgroundColor;
+    }
+  }
+
+  .final_buttons_wrapper__ {
+    margin-top: 35px;
+  }
+
+  .figure__ {
+    padding-bottom: 76.086%;
+  }
+
+  &.without_border {
+    .input__,
+    .textarea-om,
+    .select__ {
+      border: none;
+    }
+  }
+
+  &.consultation_section {
+    .figure__ {
+      padding-bottom: 81.77%;
+    }
+  }
+
+  &.profile_section {
+    .figure__ {
+      padding-bottom: 127.52%;
+    }
   }
 }

@@ -1,0 +1,154 @@
+.consultation_box {
+  display: flex;
+  align-items: center;
+  background-color: $mainBackgroundColor;
+
+  .content_wrapper {
+    display: flex;
+    align-items: center;
+    padding: 30px 25px;
+  }
+
+  .consultation_description {
+    width: 100%;
+    margin-inline-start: 30px;
+
+    .head__ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .name__ {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $headingMainColor;
+    }
+
+    .rate {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      .rating_by_number {
+        font-size: 20px;
+        font-weight: 500;
+        color: $headingThirdColor;
+      }
+    }
+
+    .date__ {
+      font-size: 18px;
+      font-weight: 600;
+      color: $headingMainColor;
+    }
+
+    .date_info__ {
+      font-weight: 500;
+      color: $primaryColor;
+
+      .date_info__ {
+        margin-inline-start: 6px;
+      }
+    }
+
+    .parag__ {
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+
+	&:not(:last-of-type) {
+		margin-bottom: 30px;
+	}
+
+  &:hover {
+    .figure__ {
+      .img-om {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@include sm {
+  .consultation_box {
+    .name__,
+    .date__ {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .parag__ {
+      font-size: 12px;
+    }
+
+    .consultation_box_link {
+      height: 287px;
+    }
+  }
+}
+
+@include xs {
+  .consultation_box {
+    flex-direction: column;
+
+    .content_wrapper {
+      flex-direction: column;
+			padding: 15px 10px;
+    }
+
+    .consultation_description {
+      margin: 0;
+    }
+
+    .consultation_box_link {
+      padding: 10px;
+      width: 100%;
+      height: fit-content;
+    }
+  }
+}
+
+@include xxs {
+  .consultation_box {
+		.content_wrapper {
+			>.figure__ {
+				width: 90px;
+			}
+		}
+
+    .consultation_description {
+      // .head__ {
+			// 	flex-direction: column;
+			// 	gap: 15px;
+      // }
+
+      .name__,
+      .date__ {
+        font-size: 12px;
+				gap: 5px;
+
+				.rate {
+					.rating_star_icon__ {
+						font-size: 10px;
+					}
+
+					.rating_by_number {
+						font-size: 12px;
+					}
+				}
+      }
+
+      .parag__ {
+        font-size: 8px;
+      }
+    }
+  }
+}

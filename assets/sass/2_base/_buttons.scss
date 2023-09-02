@@ -16,13 +16,13 @@
 
   &.modify_button__ {
     border-radius: 5px;
-    border: 1px solid $secondaryColor;
-    color: $secondaryColor;
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
     height: 32px;
     min-width: 87px;
 
     &:hover {
-      background-color: rgba($secondaryColor, 0.1);
+      background-color: rgba($primaryColor, 0.1);
     }
   }
 
@@ -35,6 +35,15 @@
 
     &:hover {
       background-color: rgba($redColor, 0.1);
+    }
+  }
+
+  &.forget_password_model_button__ {
+    margin-inline-start: auto;
+    color: $primaryColor;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

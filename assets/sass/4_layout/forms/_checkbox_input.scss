@@ -26,8 +26,8 @@
 
     &:checked {
       +.checkbox-label-om {
-        background-color: $secondaryColor;
-        border-color: $secondaryColor;
+        background-color: $primaryColor;
+        border-color: $primaryColor;
         background-image: url(../images/shapes/checkbox.svg);
       }
     }
@@ -39,6 +39,7 @@
     padding: 0;
     width: 18px;
     height: 18px;
+    border-radius: 5px;
     background-color: #fff;
     border: 1px solid #e8e8e8;
     background-position: center center;
@@ -53,5 +54,9 @@
     margin: 0;
     color: $headingMainColor;
     cursor: pointer;
+
+    .link__ {
+      color: $primaryColor;
+    }
   }
 }
