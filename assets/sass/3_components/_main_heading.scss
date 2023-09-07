@@ -7,8 +7,12 @@
     width: fit-content;
     text-align: start;
 
-    @include xxs {
+    @include sm {
       font-size: 25px;
+    }
+
+    @include xxs {
+      font-size: 20px;
     }
   }
   

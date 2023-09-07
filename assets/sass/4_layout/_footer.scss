@@ -4,7 +4,7 @@
   background-color: rgba($primaryColor, 1);
 
   @include sm {
-    padding-top: 40px;
+    padding: 40px 0 0;
   }
 
   &::after,
@@ -35,6 +35,14 @@
     inset-inline-end: 320px;
     width: 131px;
     height: 38px;
+
+    @include sm {
+      bottom: 0;
+    }
+
+    @include xs {
+      inset-inline-end: 150px;
+    }
   }
 }
 
@@ -175,7 +183,7 @@
   margin: 0;
 
   @include xs {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 

@@ -11,7 +11,7 @@
       position: relative;
 
       @include xxs {
-        padding-bottom: 450px;
+        padding-bottom: 380px;
       }
 
       &::after {
@@ -94,6 +94,10 @@
         font-size: 16px;
         max-height: 132px;
       }
+
+      @include xxs {
+        font-size: 14px;
+      }
     }
   }
 
@@ -107,6 +111,14 @@
     flex-direction: column;
     gap: 10px;
     z-index: 100;
+
+    @include sm {
+      bottom: 50px;
+    }
+
+    @include xs {
+      bottom: 30px;
+    }
 
     .buttons_wrapper {
       display: flex;
@@ -320,6 +332,14 @@
   .customers_opinions_row_modify {
     @include sm {
       gap: 65px;
+    }
+  }
+}
+
+.our_partners_section {
+  .col-12 {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
 }

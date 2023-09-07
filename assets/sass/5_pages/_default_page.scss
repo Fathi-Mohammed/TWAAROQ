@@ -40,6 +40,10 @@
   position: relative;
   padding: 100px 0;
   z-index: 3;
+
+  @include sm {
+    padding: 30px 0;
+  }
 }
 
 .home_page_section_background {
