@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Twaaroq</title>
+
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />    
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+
+  <body>
+    <!-- start header  -->
+    <header class="main_header__">
+      <div class="fixed_header__">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-2 col-md-6 col-sm-3 col-3">
+              <a class="header_logo__" href="index.html">
+                <figure class="figure__">
+                  <img src="assets/images/logo.png" alt=".." />
+                </figure>
+              </a>
+            </div>
+
+            <div class="col-lg-7 col-12 col_modify">
+              <nav class="nav-om" id="navbar-menu-om">
+                <button class="close-button__"></button>
+
+                <figure class="figure__ nav_logo__">
+                  <img src="assets/images/logo.png" alt=".." />
+                </figure>
+                <div class="sing-up-blocks nav_sign_block__">
+                  <a class="singup_link login_link" href="register_signin.html"
+                    >تسجيل الدخول</a
+                  >
+                  <a class="singup_link" href="register_signin.html">
+                    <figure
+                      class="figure__ icon__ loading-omd"
+                      style="background-color: #dbecff"
+                    >
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/shapes/header_user.svg"
+                        alt=".."
+                      />
+                    </figure>
+                    حساب جديد
+                  </a>
+                </div>
+                <ul class="nav-list-om list-unstyled">
+                  <li>
+                    <a href="index.html">الرئيسية</a>
+                  </li>
+                  <li>
+                    <a class="" href="our_message_and_goals.html">
+                      عن الشركة
+                    </a>
+                  </li>
+                  <li>
+                    <a href="our_services.html">خدماتنا </a>
+                  </li>
+                  <li>
+                    <a href="our_partners.html">شركائنا</a>
+                  </li>
+                  <li>
+                    <a href="contact_us.html">اتصل بنا</a>
+                  </li>
+                  <li class="active">
+                    <a href="consultation_request.html">طلب استشارة</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-9 col-9">
+              <ul class="toolbar_options__ list-unstyled">
+                <!-- <li class="block__">
+                  <div class="account_options__ dropdown__">
+                    <a class="account_options_link__ butt__" href="#!">
+                      مرحبا بك
+                    </a>
+                    <ul class="sub-menu__">
+                      <li>
+                        <a class="sub_menu_item__" href="profile.html">
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/profile.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          تعديل
+                        </a>
+                      </li>
+                      <li>
+                        <a class="sub_menu_item__" href="my_consultations.html">
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/consulting.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          استشاراتي
+                        </a>
+                      </li>
+                      <li>
+                        <button
+                        type="button"
+                        class="sub_menu_item__"
+                        data-toggle="modal"
+                        data-target="#log_out_modal"    
+                        >
+                          <figure class="figure__ icon__ loading-omd">
+                            <img
+                              class="lazy-omd img-om"
+                              data-src="assets/images/shapes/exit.svg"
+                              alt=".."
+                            />
+                          </figure>
+                          تسجيل الخروج
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="block__ header_notification_block__">
+                  <figure class="figure__ icon__ loading-omd">
+                    <img
+                      class="lazy-omd img-om"
+                      data-src="assets/images/shapes/notifications.svg"
+                      alt=".."
+                    />
+                  </figure>
+                  <p class="header_notification_number__">999</p>
+                </li> -->
+
+                <li class="block__ larg_size_only__">
+                  <div class="sing-up-blocks">
+                    <button
+                      type="button"
+                      class="singup_link login_link"
+                      data-toggle="modal"
+                      data-target="#log_in_modal"
+                    >
+                      تسجيل الدخول
+                    </button>
+
+                    <button
+                      type="button"
+                      class="singup_link"
+                      data-toggle="modal"
+                      data-target="#sign_up_modal"
+                    >
+                      حساب جديد
+                    </button>
+                  </div>
+                </li>
+
+                <li class="block__ small_size_only__">
+                  <button
+                    class="menu_button__ button__"
+                    id="menu-butt-activ-om"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="bars"
+                      class="svg-inline--fa fa-bars fa-w-14"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- Start Page Head -->
+    <section class="page_head_section">
+      <h1 class="page_main_head_title">حسابي</h1>
+      <div class="overlay__"></div>
+    </section>
+    <!-- End Page Head -->
+
+    <!-- Start Consultation -->
+    <main
+      class="my_account_page section_defaults without_border"
+    >
+      <div class="container">
+        <div class="row row_modify with_row_gap">
+          <div class="col-12 col-lg-4 ">
+            <div class="panal_links_wrapper__">
+              <h3 class="title__">الإعدادات</h3>
+              <a href="#" class="link-om button__ full_width__ ">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                البيانات الشخصية
+              </a>
+              <a href="#" class="link-om button__ full_width__ active">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                تغيير كلمة السر
+              </a>
+              <a href="#" class="link-om button__ full_width__">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                تغيير كلمة السر
+              </a>
+              <a href="#" class="link-om button__ full_width__">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                تغيير كلمة السر
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="acc_panel_content_wrapper__">
+              <div class="row row_modify with_row_gap">
+                <div class="col-12 col-md-6">
+                  <div class="input_group__">
+                    <label class="label__">كلمة المرور الجديدة</label>
+                    <div class="icon_input_group phone__">
+                      <input
+                        class="input__"
+                        type="text"
+                        placeholder="قم بإدخال كلمة المرور الجديدة"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="input_group__">
+                    <label class="label__">تأكيد كلمة المرور الجديدة</label>
+                    <div class="icon_input_group phone__">
+                      <input
+                        class="input__"
+                        type="text"
+                        placeholder="قم بإعادة إدخال كلمة المرور الجديدة"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button class="submit-button__">حفظ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Consultation -->
+
+    <footer class="footer_sec__">
+      <div class="container">
+        <div class="footer_content__">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">روابط هامة</h2>
+              <ul class="footer_list__ list-unstyled">
+                <li><a href="sectors.html">الرئيسيه</a></li>
+                <li><a href="our_message_and_goals.html">عن الشركه</a></li>
+                <li><a href="our_partners.html">شركائنا</a></li>
+                <li><a href="our_services.html">خدماتنا </a></li>
+                <li><a href="contact_us.html">إتصل بنا </a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">الخدمات</h2>
+              <ul class="footer_list__ list-unstyled">
+                <li><a href="#">إستشارات ماليه</a></li>
+                <li><a href="#">إستشارات أسريه</a></li>
+                <li><a href="#">إستشارات بنكيه</a></li>
+                <li><a href="#">إستشارات تعليميه</a></li>
+                <li><a href="#">إستشارات إسلاميه</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">تواصل معنا</h2>
+              <ul class="footer_socials__ list-unstyled">
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/twitter.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/instagram.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="#!" class="link__">
+                    <img
+                      class="img-om"
+                      src="./assets/images/socials/facebook.png"
+                      alt=".."
+                      width=""
+                      height=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+              <h2 class="site_head__ footer_head__">إتصل بنا</h2>
+              <ul class="footer_list__ list-unstyled contact_info">
+                <li class="li__">
+                  <a href="tel:01054784175" class="link__">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/socials/calling.png"
+                        alt=".."
+                      />
+                    </figure>
+
+                    01054784175
+                  </a>
+                </li>
+                <li class="li__">
+                  <a href="mailto:Mohamed_ali987@hotmail.com" class="link__">
+                    <figure class="figure__ icon__ loading-omd">
+                      <img
+                        class="lazy-omd img-om"
+                        data-src="assets/images/socials/email.png"
+                        alt=".."
+                      />
+                    </figure>
+
+                    Mohamed_ali987@hotmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="copyrights_content___">
+      <div class="container">
+        <p class="copyrights__">
+          جميع الحقوق محفوظه لشركه المصادر الرقميه 2023
+        </p>
+      </div>
+    </section>
+
+
+    <!-- start js include  -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
+  </body>
+</html>

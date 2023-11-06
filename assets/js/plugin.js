@@ -242,8 +242,11 @@ function stickyHeader($) {
 
 function changeFileInputName() {
   $('.file_input__').change(function(e) {
-    let filePlaceholder = $('.file_input_placeholder');
-    filePlaceholder.text(e.target.files[0].name);
-    filePlaceholder.addClass('uploaded')
+    let filePlaceholder = document.querySelector('.file_input_placeholder');
+    filePlaceholder.innerHTML = ``;
+    for (i=0;i < e.target.files.length ; i++) {
+      filePlaceholder.innerHTML += `${e.target.files[i].name} ,`;
+    }
+    filePlaceholder.classList.add("uploaded")
   })
 }
